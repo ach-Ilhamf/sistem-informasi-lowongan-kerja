@@ -1,0 +1,411 @@
+*{
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    outline: 0px;
+    font-family: 'Open-Sans', sans-serif;
+}
+.wrapper{
+    width: 100%;
+    margin: auto;
+    box-shadow: 3px 3px 3px 3px #364f6b;
+    position: fixed;
+    background: #1a7db7; 
+}
+.banner{
+    height: 55px;
+    background-image: url("wallwork.jpg");
+    background-size: cover;
+    position: relative;
+    display: flex;
+    padding: 30px;
+}
+
+.banner h1{
+    color: white;
+    width: 100%;
+    border-bottom: 2px solid white;
+    z-index: 1;
+}
+
+.logo img{
+    float:left;
+    margin-left:20px;
+    padding-top:0px;
+    width:250px;
+}
+
+.menu{
+    float:right;
+}
+header{
+    width: 100%;
+    height: 65px;
+    margin: auto;
+    display: flex;
+    position:-webkit-sticky;
+    top: 0;
+    background: transparent; 
+    z-index: 2;
+}
+header ul{
+    list-style-type: none;
+    margin-right: 20px;
+    padding: 0;
+    overflow: hidden;
+}
+header ul li{
+    float: left;
+    padding-right: 5px;
+    border: none;
+}
+header ul li a{
+    color: #364f6b;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+header ul li a:hover{
+    background-color: rgb(237, 237, 237);
+    color: rgb(137, 133, 133);
+}
+
+
+a.tmbl-biru{
+    background: #7FB5FF;
+    border-radius: 0px;
+    margin-top: 15px;
+    padding: 10px 15px 10px 15px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+a.tmbl-biru:hover{
+    color: white;
+    background-color: #4492ff;
+    transition: 350ms;
+}
+
+a.tmbl-oren{
+    background: #FF5F00;
+    border-radius: 0px;
+    margin-top: 15px;
+    padding: 10px 15px 10px 15px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+a.tmbl-oren:hover{
+    color: white;
+    background-color: #ff8b48;
+    transition: 350ms;
+}
+
+.body{
+    margin-top: 100px;
+    margin-left: 400px;
+    width: min-content;
+    padding: 20px;
+    background: linear-gradient(to right bottom,
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.1)
+    );
+    border-radius: 10px;
+}
+.body table tr td{
+    padding:10px;
+    line-height: 22px;
+}
+.body table tr td i{
+    font-size: 0.2cm;
+}
+.conten{
+    text-align: justify;
+    color: black;
+    margin:20px;
+    padding: 50px;
+    border-radius: 10px;
+    background: linear-gradient(to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3));
+    width: 600px;
+    box-shadow: 1px 1px 5px #364f6b ;
+}
+.conten ul li{
+    margin-left: 20px;
+    list-style:outside ;
+    line-height: 0.8cm;
+    border-bottom: none;
+}
+.body table tr td{
+    padding: 5px;
+}
+.conten input{
+    padding-left:5px;
+    height: 25px;
+    width: 400px;
+    padding: 8px 10px;
+    margin-bottom: 15px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid #2979ff;
+    color: black;
+    font-size: 15px;
+}
+.conten select{
+    width: 150px;
+    height: 30px;
+    font-size: 0.4cm;
+}
+.conten h1{
+    text-align: center;
+    color: #FF5F00;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    border-bottom: 4px solid #2979ff;
+}
+.conten label{
+    text-align: left;
+    color: rgb(138, 137, 137);
+    font-size: "12px";
+}
+.conten button {
+    width: 50%;
+    padding: 5px 0;
+    border-radius: 15px;
+    background-color: #2979ff;
+    font-size: 20px;
+    color: #fafafa;
+}
+.conten form button:hover{
+    color: white;
+    transition: 350ms;
+    background-color:#7FB5FF;
+}
+
+.sidebar{
+    float: left;
+	width: 100%;
+    margin-top: 100px;
+    margin-left: 80px;
+	background: #edf2f4;
+	position: static;
+	z-index: auto;
+    box-shadow: 1px 1px 12px #364f6b;
+    border-radius: 15px;
+}
+li.top{
+    background: #1a7db7;
+    border-radius: 15px;
+}
+
+ul{
+	padding: 0;
+	margin-left: 0px;
+}
+ul li{
+	list-style: none;
+	
+}
+ul li a{
+	text-decoration: none;
+	color: black;
+	display: block;
+	padding: 19px 0px 18px 25px;
+	transition: 200ms;
+}
+ul li a:hover{
+	background-color: #1a7db7;
+    color: #FFFFFF;
+    border-radius: 10px;
+}
+li li a span{
+	display: inline-block;
+}
+ul ul{
+	display: none;
+	margin:0px;
+}
+ul li a .fa-angle-down{
+	margin-right: 10px;
+}
+
+ul li img{
+    border-radius: 50px;
+    margin-top: 20px;
+    margin-left: 65px;
+}
+
+ul li h4{
+	color: black;
+    margin-top: 15px;
+}
+@media(min-width: 768px) {
+	.sidebar{
+		width: 240px;
+	}
+}
+
+.teks{
+    text-align: center;
+    margin-left: 30%;
+    margin-right: 12%;
+    margin-top: 15%;
+    background-color: none;
+    color: #FFFFFF;
+}
+.teks h1{
+    color: #FF5F00;
+}
+.teks img{
+    padding-top:20px;
+    width:340px;
+    height: 90px;
+}
+
+.kotakBiru h3{
+    background:#7FB5FF;
+    margin-top: 15px;
+    margin-left: 37%;
+    width: 21%;
+    padding: 10px 15px 10px 15px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.kotakBiru h3:hover{
+    background: #2979ff;
+    color: white;
+    transition: 350ms;
+}
+
+.btn{
+    float: right;
+    margin-top: 50px;
+    margin-right: 870px;
+    text-align: center;
+    color: #FF5F00;
+    text-transform: uppercase;
+    border-bottom: 4px solid #2979ff;
+}
+.menubantuan {
+    background-color: #2979ff;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    padding:20px;
+    margin-top:20px;
+    border-radius: 15px;
+}
+.menubantuan:hover {
+    background-color: blue;
+    }
+.bantuan {
+    margin-top: 20px;
+    margin-left: 0px;
+    display: inline-block;
+}
+.sub_bantuan {
+    display: none;
+    background-color: transparent;
+    border-style: outset;
+    min-width: 200px;
+    border-radius: 10px;
+}
+.sub_bantuan table {
+    color: black;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+}
+.bantuan:hover .sub_bantuan {
+    display: block;
+}
+.cari{
+    margin-left: 11%;
+    position: absolute;
+    padding: 30px 30px;
+    background-color: none;
+    width: 1000px;
+}
+
+.cari input{
+    padding: 20px 15px;
+    background-color: transparent;
+    border: 2px solid rgb(138, 137, 137);
+    color: black;
+    font-size: 15px;
+}
+
+.cari form button{
+    padding: 15px 10px;
+    border-radius: 0px;
+    background-color: #2979ff;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fafafa;
+}
+
+.cari form button:hover{
+    color: white;
+    transition: 350ms;
+    background-color: #FF5F00;
+}
+
+.list{
+    margin-left: 15%;
+}
+
+.tabel{
+    margin-left: 0%;
+}
+
+.tabel img{
+    margin-left: 9px;
+}
+
+.tabel img:hover{
+    background-color: gray;
+}
+
+.simpan{
+    background-color: #C2DED1;
+    padding: 8px 8px 8px 8px;
+    width: 80px;
+    color: #FF5F00;
+    text-align: center;
+    font-weight: bold;
+    float: right;
+    border-style: groove;
+    border-color: black;
+
+}
+
+.simpan:hover{
+    background-color: #bcd3c9;
+}
+a.selengkapnya:hover{
+    background-color: #bcd3c9;
+}
+a.selengkapnya{
+    background-color: #C2DED1;
+    padding: 8px 8px 8px 8px;
+    width: 160px;
+    color: #FF5F00;
+    text-align: center;
+    font-weight: bold;
+    border-style: inherit;
+    float: right;
+    border-style: groove;
+    border-color: black;
+}
+
+.bg{
+    margin-left: 160px;
+    margin-top: 110px;
+}
+

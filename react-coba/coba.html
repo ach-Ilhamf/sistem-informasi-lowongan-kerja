@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Web Anda</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+
+coba
+
+<script>
+    axios.get('api/data')
+        .then(function (response) {
+            // Tangani respons yang berhasil di sini
+            console.log(response.data);
+        })
+        .catch(function (error) {
+            // Tangani kesalahan di sini
+            console.error('Error fetching data:', error);
+        });
+
+</script>
+
+</body>
+</html>

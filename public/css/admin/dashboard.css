@@ -1,0 +1,277 @@
+*{
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Open-Sans', sans-serif;
+}
+body{
+  background: linear-gradient(to right top, #1a7db7, #6cdbeb);
+  padding-bottom: 40px;
+}
+.container{
+  width: 90%;
+  margin: auto;
+  position: relative;
+}
+.headerlogo {
+  float: left;
+}
+.headerlogo img{
+  float: left;
+  width: 215px;
+}
+.menu{
+  float: right;
+}
+header{
+  width: 100%;
+  height: 65px;
+  margin: auto;
+  display: flex;
+  position: sticky;
+  position:-webkit-sticky;
+  top: 0;
+  background: #1a7db7; 
+  z-index: 2;
+}
+header ul{
+  list-style-type: none;
+  margin-right: 20px;
+  padding: 0;
+  overflow: hidden;
+}
+header ul li{
+  float: left;
+  padding-right: 5px;
+  border: none;
+}
+header ul li a{
+  color: #364f6b;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+}
+header ul li a:hover{
+  background-color: rgb(237, 237, 237);
+  color: rgb(137, 133, 133);
+}
+
+a.tmbl-biru{
+  background: #fb8500;
+  margin-top: 8px;
+  padding: 15px 20px 15px 20px;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+a.tmbl-biru:hover{
+  color: white;
+  background-color: #bb6503;
+}
+
+a.tmbl-oren{
+  background: #020597;
+  border-radius: 0px;
+  margin-top: 8px;
+  padding: 15px 20px 15px 20px;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+a.tmbl-oren:hover{
+  color: white;
+  background-color: #0b0c57;
+}
+.banner{
+  height: 55px;
+  background-image: url("wallwork.jpg");
+  background-size: cover;
+  position: relative;
+  display: flex;
+  padding: 30px;
+}
+
+.banner h1{
+  color: white;
+  width: 100%;
+  border-bottom: 2px solid white;
+  z-index: 1;
+}
+.sidebar{
+width: 100%;
+background: #edf2f4;
+position: absolute;
+  margin-top: 40px;
+  margin-left: 100px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 12px #364f6b ;
+}
+li.top{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background: #1a7db7;
+}
+ul{
+padding: 0;
+margin-left: 0px;
+}
+ul li{
+list-style: none; 
+}
+ul li a{
+text-decoration: none;
+color: black;
+display: block;
+padding: 19px 0px 18px 25px;
+transition: 200ms;
+}
+ul li a:hover{
+  background: #cacaca;
+}
+.active{
+  background: #cacaca;
+}
+ul li a .fa-angle-down{
+margin-right: 10px;
+}
+ul li img{
+  border-radius: 50px;
+  margin-top: 20px;
+  margin-left: 23px;
+  width: 200px;
+}
+
+ul li h4{
+color: #fffbfb;
+}
+@media(min-width: 768px) {
+.sidebar{
+  width: 240px;
+}
+}
+.body{
+  margin-top: 40px;
+  margin-left: 390px;
+  width:fit-content;
+  padding: 50px;
+}
+.body u{
+  text-decoration: underline;
+}
+.body table th{
+  text-align: left;
+}
+.body table tr td{
+  padding:10px;
+  line-height: 22px;
+}
+.body table tr td i{
+  font-size: 0.2cm;
+}
+.body table tr td a{
+  color:blue;
+}
+.dropdown{
+  cursor: pointer;
+  width:240px;
+}
+li.dropdown {
+  display: block;
+}
+.dropdown:hover .isi-dropdown {
+  display:contents;
+}
+.isi-dropdown a:hover {
+  color: #1abc9c !important;
+}
+.isi-dropdown {
+  position: absolute;
+  display: none;
+}
+.isi-dropdown a {
+  color: rgb(0, 0, 0) !important;
+}
+.isi-dropdown a:hover {
+  color: #ffffff !important;
+  background: #1abc9c !important;
+}
+.box{
+  text-align: justify;
+  color: black;
+  margin:20px;
+  padding: 50px;
+  border-radius: 10px;
+  background: linear-gradient(to right bottom,
+  rgba(255, 255, 255, 0.7),
+  rgba(255, 255, 255, 0.3)
+);
+  width: fit-content;
+  box-shadow: 1px 1px 5px #364f6b ;
+}
+.box h3{
+  padding-bottom: 10px;
+  border-bottom: 1px solid #000000;
+}
+.box .batas{
+  margin-top: 25px;
+}
+.box label{
+  text-align: left;
+  color: rgb(94, 94, 94);
+  font-size: "12px";
+}
+
+.box input{
+  width: 570px;
+  padding: 8px 8px;
+  margin-bottom: 15px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid #2979ff;
+  color: black;
+  font-size: 15px;
+}
+.box textarea{
+  width: 570px;
+  height: 400px;
+  padding: 8px 10px;
+  margin-bottom: 15px;
+  border: 1px solid #2979ff;
+  background-color: transparent;
+  color: black;
+  font-size: 15px;
+}
+
+.box form button{
+  width: 120px;
+  border: none;
+  padding: 5px;
+  background-color: #2979ff;
+  font-size: 20px;
+  color: #fafafa;
+}
+
+.box form button:hover{
+  color: white;
+  transition: 350ms;
+  background-color:red;
+}
+.box2{
+  text-align: justify;
+  color: black;
+  width: 625px;
+  margin:20px;
+  padding: 30px 30px;
+  border-radius: 10px;
+  background: linear-gradient(to right bottom,
+  rgba(255, 255, 255, 0.7),
+  rgba(255, 255, 255, 0.3)
+);
+  box-shadow: 1px 1px 5px #364f6b ;
+}
+.box2 a{
+  font-weight: bold;
+  color: blue;
+}
